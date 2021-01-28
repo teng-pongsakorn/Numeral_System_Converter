@@ -1,9 +1,12 @@
 package converter;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
-        int decimal = 10;
-        System.out.printf("%d = %s", decimal, DecimalConverter.toBinaryString(decimal));
+        Scanner scanner = new Scanner(System.in);
+        int decimal = scanner.nextInt();
+//        System.out.printf("%d = %s", decimal, DecimalConverter.toBinaryString(decimal));
+        System.out.println(decimal % 8);
     }
 }
